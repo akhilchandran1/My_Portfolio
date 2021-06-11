@@ -10,16 +10,16 @@
     --hue-color: 250; 
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 80%, 24%);
-    --first-color-second: hsl(var(--hue-color), 80%, 24%);
-    --first-color-alt: hsl(var(--hue-color), 70%, 24%);
-    --first-color-lighter: hsl(var(--hue-color), 60%, 24%);
-    --title-color: hsl(var(--hue-color), 10%, 24%);
-    --text-color: hsl(var(--hue-color), 10%, 44%);
-    --text-color-light: hsl(var(--hue-color), 80%, 24%);
-    --input-color: hsl(var(--hue-color), 10%, 74%);
-    --body-color: hsl(var(--hue-color), 80%, 90%);
-    --container-color: rgb(250, 250, 250);
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color),69 %, 51%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: rgb(255, 255, 255);
     /*----------------- Font and typography ------------------*/
     --body-font: 'Poppins', sans-serif;
 
@@ -365,4 +365,142 @@ img{
 .about_buttons{
     display: flex;
     justify-content: center;
+}
+
+/*-------------------------- SKILLS ------------------------------*/
+.skills_container{
+    row-gap: 0;
+}
+
+.skills_header{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+}
+
+.skills_icon,
+.skills_arrow{
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.skills_icon{
+    margin-right: var(--mb-0-75);
+}
+
+.skills_title{
+    font-size: var(--h3-font-size);
+}
+
+.skills_subtitle{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.skills_arrow{
+    margin-left: auto;
+    transition: 0.4s;
+}
+
+.skills_sub_skill{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+}
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills_bar,.skills_percentage{
+    height: 5px;
+    border-radius: 0.25rem;
+}
+
+.skills_bar{
+    background-color: var(--first-color-lighter);
+}
+
+.skills_percentage{
+    display: block;
+    background-color: var(--first-color);
+}
+
+.skills_dataReGa{
+    width: 90%;
+}
+.skills_dataColl{
+    width: 90%;
+}
+.skills_dataCle{
+    width: 89%;
+}
+.skills_dataAna{
+    width: 90%;
+}
+.skills_dataInte{
+    width: 85%;
+}
+.skills_dataVis{
+    width: 87%;
+}
+.skills_ai{
+    width: 70%;
+}
+.skills_python{
+    width: 79%;
+}
+.skills_r{
+    width: 75%;
+}
+
+.skills_html{
+    width: 93%;
+}
+.skills_css3{
+    width: 90%;
+}
+.skills_tailwCss{
+    width: 80%;
+}
+.skills_boots{
+    width: 79%;
+}
+.skills_javaScr{
+    width: 60%;
+}
+.skills_angu{
+    width: 55%;
+}
+
+.skills_php{
+    width: 70%;
+}
+.skills_java{
+    width: 75%;
+}
+
+.skills_photoshop{
+    width: 88%;
+}
+.skills_illustrator{
+    width: 68%;
+}
+
+.skills_bookkeeping{
+    width: 80%;
+}
+.skills_sage{
+    width: 80%;
+}
+.skills_quickbooks{
+    width: 60%;
+}
+.skills_auditing{
+    width: 81%;
+}
+.skills_finance{
+    width: 82%;
 }
