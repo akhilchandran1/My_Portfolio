@@ -11,7 +11,7 @@
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color),69 %, 51%);
+    --first-color-second: hsl(var(--hue-color),69 %, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
@@ -224,6 +224,11 @@ img{
 /*----------- show menu -------------*/
 .show-menu{
     bottom: 0;
+}
+
+/*--------------- Active link ------------*/
+.active-link{
+    color: var(--first-color);
 }
 
 /*------------------------ HOME ----------------------*/
@@ -693,3 +698,62 @@ img{
     outline: none;
     padding: 0.25rem 0.5rem 0.5rem 0;
 }
+
+/*--------------------------------- FOOTER -----------------------------------*/
+footer{
+    padding-top: 2rem;
+}
+
+.footer_container{
+    row-gap:3.5rem;
+}
+
+.footer_bg{
+    background-color: var(--first-color);
+    padding: 2rem 0 3rem;
+}
+
+.footer_title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer_subtitle{
+    font-size: var(--small-font-size);
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer_link:hover{
+    color:var(--first-color-lighter)
+}
+
+.footer_social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer_social:hover{
+    color: var(--first-color-lighter);
+}
+
+.footer_copy{
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-light);
+    margin-top: var(--mb-3);
+}
+
+.footer_title,
+.footer_subtitle,
+.footer_link,
+.footer_social{
+    color: rgb(255, 255, 255);
+}
+
+
+
