@@ -66,10 +66,6 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification_active')
     })
 })
-
-/*----------------- SERVICES MODAL --------------------*/
-
-
 /*----------------- PORTFOLIO SWIPER  --------------------*/
 let swiper = new Swiper(".portfolio_container", {
     cssMode: true,
@@ -83,8 +79,6 @@ let swiper = new Swiper(".portfolio_container", {
       clickable:true,
     }
 });
-
-/*----------------- TESTIMONIAL --------------------*/
 
 
 /*----------------- SCROLL SECTIONS ACTIVE LINK --------------------*/
