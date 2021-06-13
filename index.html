@@ -57,6 +57,9 @@
                     <i class="uil uil-times nav_close" id="nav-close"></i>
                 </div>
                 <div class="nav_btns">
+                    <!-------------- Theam color change button ------------->
+                    <i class="uil uil-moonset change-theme" id="theme-button"></i>
+
                     <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
@@ -101,7 +104,7 @@
                             </svg>
                         </div>
                         <div class="home_data">
-                            <h1 class="home_title">Hi, I am Akhil Chandran</h1>
+                            <h1 class="home_title">Hi, I am <br> Akhil Chandran</h1>
                             <h3 class="home_subtitle">BSC IT student</h3>
                             <p class="home_description">
                                 I have developed a particular interest in Artificial Intelligence and Data Science and I am currently more focused in this area to gain deep understanding.
@@ -152,12 +155,6 @@
                                     <span class="about_info-name">Completed <br> Assignments</span>
                                 </div>
                             </div>
-
-                            <div class="about_buttons">
-                                <a download="" href="cv.AkhilChandran_CV.pdf" class="button button--flex">
-                                    Download CV<i class="uil uil-download-alt button_icon"></i>
-                                </a>
-                            </div>
                     </div>
                 </dev>
         
@@ -168,8 +165,8 @@
                 <h2 class="section_title">Skills</h2>
                 <span class="section_subtitle">Technical skills</span>
 
-                <div class="=skills_container container grid">
-                    <div>
+                <div class="skills_container container grid">
+                    <!--<div>-->
                         <!--------------------- Skill 1 ----------------->
                         <div class="skills_content skills_open">
                             <div class="skills_header">
@@ -503,7 +500,7 @@
                         </div>
 
 
-                    </div>
+                   <!---- </div>-->
                 </div>
 
             </section>
@@ -917,11 +914,16 @@
             
         </footer>
         
-        <!---------------- SCROLL TOP ---------------->
-
+        <!---------------- SCROLL UP ---------------->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup_icon"></i>
+        </a>
 
         <!---------------- SWIPER JS ---------------->
         <script src="js/swiper-bundle.min.js"></script>
+
+        <!--------------- SCROLL REVEAL -------------->
+        <script src="js/scrollreveal.js"></script>
 
         <!---------------- MAIN JS ---------------->
         <script src="js/main.js"></script>
