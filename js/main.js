@@ -67,6 +67,7 @@ tabs.forEach(tab =>{
     })
 })
 /*----------------- PORTFOLIO SWIPER  --------------------*/
+/*
 let swiper = new Swiper(".portfolio_container", {
     cssMode: true,
     loop:true,
@@ -79,6 +80,25 @@ let swiper = new Swiper(".portfolio_container", {
       clickable:true,
     }
 });
+*/
+let swiper = new Swiper(".portfolio_container", {
+    cssMode: true,
+    loop:true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
 /*----------------- SCROLL SECTIONS ACTIVE LINK --------------------*/
