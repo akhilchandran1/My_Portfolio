@@ -607,7 +607,7 @@ img{
     display: block;
 }
 
-/*---------------------- PORTFOLIO -----------------------*/
+/*---------------------- PORTFOLIO / Recent Works -----------------------*/
 .portfolio_container{
     overflow: initial;
 }
@@ -620,6 +620,10 @@ img{
     width:265px;
     border-radius: 0.5rem;
     justify-self: center;
+}
+.mobile_app_img{
+    max-height: 200px;
+    max-width: 100px;
 }
 
 .portfolio_title{
@@ -964,7 +968,8 @@ body.dark-theme{
     }
 
     .home_content{
-        padding-top: 5.5rem;
+        padding-top: 8.5rem;
+        padding-bottom: 5rem;
         column-gap: 2rem;
         width: 934px;
     }

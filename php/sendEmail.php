@@ -3,7 +3,7 @@ $name       = @trim(stripslashes($_POST['name']));
 $from       = @trim(stripslashes($_POST['email'])); 
 $subject    = @trim(stripslashes($_POST['subject'])); 
 $message    = @trim(stripslashes($_POST['message'])); 
-$to   		= 'akhil9216@gmail.com';//replace with your email
+$to   		= 'akhil9216@gmail.com';
 
 $headers   = array();
 $headers[] = "MIME-Version: 1.0";
@@ -12,13 +12,7 @@ $headers[] = "From: {$name} <{$from}>";
 $headers[] = "Reply-To: <{$from}>";
 $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
-if($email!=NULL){
-    mail($to, $subject, $message, $headers);
-}
-if ($error == false) {
-    $result='<div class="alert alert-success">Thank You!</div>';
-}else {
-    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again</div>';
-}  
-die;
+
+mail($to, $subject, $message, $headers)or die("Error");
+echo "Your Message successfully sent ! Thank You". $name;
 ?>

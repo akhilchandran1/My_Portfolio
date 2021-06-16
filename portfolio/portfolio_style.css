@@ -80,3 +80,30 @@
     display: flex;
     justify-content: center;
   }
+
+  @keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .portfolio_gallery_column.hide{
+    display: none;
+  }
+  
+  /*responsive*/
+  @media(max-width: 991px){
+    .portfolio_gallery_column{
+      width: 50%;
+    }
+  }
+  @media(max-width: 767px){
+      .portfolio_gallery_column {
+      width: 100%;
+    }	
+    .portfolio_gallery_container .portfolio_gallery_btn{
+      margin-bottom: 10px;
+    }
+  }
