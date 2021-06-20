@@ -622,10 +622,6 @@ img{
     border-radius: 0.5rem;
     justify-self: center;
 }
-.mobile_app_img{
-    max-height: 200px;
-    max-width: 100px;
-}
 
 .portfolio_title{
     font-size: var(--h3-font-size);
@@ -969,7 +965,7 @@ body.dark-theme{
     }
 
     .home_content{
-        padding-top: 8.5rem;
+        padding-top: 12.5rem;
         padding-bottom: 5rem;
         column-gap: 2rem;
         width: 934px;

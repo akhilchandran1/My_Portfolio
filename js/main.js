@@ -190,5 +190,3 @@ sr.reveal('.qualification_sections',{delay: 400});
 
 sr.reveal('.swiper-wrapper', {})
 
-/*SCROLL CONTACT*/
-sr.reveal('.contact_content',{interval: 100}); 
