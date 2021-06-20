@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <title>Akhil Chandran</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!---------------- UNICONS -------------------->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="portfolio_style.css" />
     <link rel="stylesheet" href="../CSS/styles.css" />
-
-    <title>Akhil Chandran</title>
     <link rel="shortcut icon" type="image/png" href="../img/favicon.ico" />
   </head>
-  <body>
+  <body class="gallegry_body">
     <!------------------  HEADER ------------------>
     <header class="header" id="header">
       <nav class="nav container">
@@ -54,240 +56,253 @@
           </ul>
           <i class="uil uil-times nav_close" id="nav-close"></i>
         </div>
+        <div class="nav_btns">
+            <!-------------- Theam color change button ------------->
+            <i class="uil uil-moonset change-theme" id="theme-button"></i>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
       </nav>
     </header>
     <!-------------- MAIN  ------------->
     <div class="portfolio_gallery_main" id="my_portfolio">
-      <h1 class="portfolio_gallery-title">My Works</h1>
       <h2 class="warning_msg">**** This page is under maintenance. Please check back later !!!. *****</h2>
       <hr/>
+      <section class="gallery">
+        <div class="gallery_container">
+            <div class="portfolio_gallery_row">
+                <div class="portfolio_gallery_filter">
+                    <span class="portfolio_filter_item active" data-filter="all">Show all</span>
+                    <span class="portfolio_filter_item" data-filter="website">Website</span>
+                    <span class="portfolio_filter_item" data-filter="mobileApp">Mobile App</span>
+                    <span class="portfolio_filter_item" data-filter="graphicDesigning">Graphic Designing</span>
+                </div>
 
-      <div class="portfolio_gallery_container" id="myBtnContainer">
-        <button class="portfolio_gallery_btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="portfolio_gallery_btn" onclick="filterSelection('website')">
-          Website
-        </button>
-        <button class="portfolio_gallery_btn" onclick="filterSelection('mobileApp')">
-          Mobile App
-        </button>
-        <button class="portfolio_gallery_btn" onclick="filterSelection('graphicDesigning')">
-          Graphic Designing
-        </button>
-      </div>
+                <!-------------- Portfolio Gallery Grid ----------------->
 
-      <!-------------- Portfolio Gallery Grid ----------------->
+                <!--------------- Website ------------------>
+                <div class="portfolio_gallery_row">
+                        <div class="portfolio_gallery_item website">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Website/plantDiseaseDetection_webpage_01.png" alt="Web Page"/>
+                                <h4>Web Page</h4>
+                                <p>Plant Disease Detection (CNN, MobileNet and NASNet)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio_gallery_item website">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Website/plantDiseaseDetection_webpage_02.png" alt="Web Page" />
+                                <h4>Web Page (Plant Disease Detection)</h4>
+                                <p>lant Disease Detection (CNN, MobileNet and NASNet)</p>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="portfolio_gallery_column website">
+                            <div class="portfolio_gallery_content">
+                                <img src="" alt="Web Page" />
+                                <h4>Web page</h4>
+                                <p>static web</p>
+                            </div>
+                        </div>
+                    -->
+                        <!--------------- Mobile App ------------------>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_1.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_2.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_3.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_8.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_11.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_13.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_14.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_16.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item mobileApp">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Mobile_app/Android_Mobile_17.png" alt="Mobile App" />
+                                <h4>Mobile App</h4>
+                                <p>Android Mobile App</p>
+                            </div>
+                        </div>
 
-      <!--------------- Website ------------------>
-      <div class="portfolio_gallery_row">
-            <div class="portfolio_gallery_column website">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Website/plantDiseaseDetection_webpage_01.png" alt="Web Page"/>
-                    <h4>plant Disease Detection</h4>
-                    <p>CNN, MobileNet and NASNet</p>
-                </div>
-            </div>
-            
-            <div class="portfolio_gallery_column website">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Website/plantDiseaseDetection_webpage_02.png" alt="Web Page" />
-                    <h4>Web Page</h4>
-                    <p>static web</p>
-                </div>
-            </div>
-            <!--
-            <div class="portfolio_gallery_column website">
-                <div class="portfolio_gallery_content">
-                    <img src="" alt="Web Page" />
-                    <h4>Web page</h4>
-                    <p>static web</p>
-                </div>
-            </div>
-        -->
-            <!--------------- Mobile App ------------------>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_1.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_2.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_3.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_8.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_11.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_13.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_14.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_16.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column mobileApp">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Mobile_app/Android_Mobile_17.png" alt="Mobile App" />
-                    <h4>Mobile App</h4>
-                    <p>Android Mobile App</p>
-                </div>
-            </div>
+                        <!--------------- Graphic Designing ------------------>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Business_cards/Business Card 001.png" alt="Graphic Designing" />
+                                <h4>Business Card</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Business_cards/Business Card 002 copy.png" alt="Graphic Designing"/>
+                                <h4>Business Card</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Gift Voucher/Gift Certificate 02.jpg" alt="Graphic Designing" />
+                                <h4>Gift Voucher</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Gift Voucher/Gift Certificate copy.jpg" alt="Graphic Designing" />
+                                <h4>Gift Voucher</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 1.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 2.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 3.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 4.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 5.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 6.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 7.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Flyer/Flyer Amra thai massage 1st page copy.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Flyer/Flyer Amra thai massage 1st page copy.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Flyer/flyer for gumtree.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Flyer/Halloween.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="portfolio_gallery_item graphicDesigning">
+                            <div class="portfolio_gallery_content">
+                                <img src="../img/portfolio_img/Grapgic designing/Flyer/Limiric.png" alt="Graphic Designing" />
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <!-- gallery item end -->
 
-            <!--------------- Graphic Designing ------------------>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Business_cards/Page 1 (ratheesh ps).jpg" alt="Graphic Designing" />
-                    <h4>Business Card</h4>
-                    <p></p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Business_cards/Page 2.jpg" alt="Graphic Designing"/>
-                    <h4>Business Card</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Gift Voucher/Gift Certificate 02.jpg" alt="Graphic Designing" />
-                    <h4>Gift Voucher</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Gift Voucher/Gift Certificate copy.jpg" alt="Graphic Designing" />
-                    <h4>Gift Voucher</h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 1.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 2.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 3.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 4.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 5.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 6.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Booklet/Page 7.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Flyer/Flyer Amra thai massage 1st page copy.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Flyer/Flyer Amra thai massage.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Flyer/flyer for gumtree.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Flyer/Halloween.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
-            <div class="portfolio_gallery_column graphicDesigning">
-                <div class="portfolio_gallery_content">
-                    <img src="../img/portfolio_img/Grapgic designing/Flyer/Limiric.jpg" alt="Graphic Designing" />
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
+            </section>
       </div>
       <!--------------- END GRID ------------------->
     </div>
     <!---------------- END MAIN ------------------>
     </section>
     <script src="portfolio_function.js"></script>
+    
+    <!---------------- SWIPER JS ---------------->
+    <script src="../js/swiper-bundle.min.js"></script>
+    <!--------------- SCROLL REVEAL -------------->
+    <script src="../js/scrollreveal.js"></script>
+    <!---------------- MAIN JS ---------------->
+    <script src="../js/main.js"></script>
   </body>
 </html>

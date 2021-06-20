@@ -542,6 +542,7 @@ img{
     cursor: pointer;
 }
 
+.qualification_button.qualification_active,
 .qualification_button:hover{
     color: var(--first-color);
 }

@@ -5,86 +5,101 @@
     text-align: center;
     padding: 20px;
   }
-
+  body{
+    margin: 0 0 var(--header-height)0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
   .portfolio_gallery_main {
     padding-top: 100px;
     max-width: 1000px;
     margin: auto;
   }
-
-  .portfolio_gallery-title
-  {
-      font-size: 36px;
-      color: #29207a;
-      text-align: center;
-      font-weight: bold;
-      margin-bottom: 30px;
+  .gallery_container{
+    max-width: 1170px;
+    margin:auto;
   }
-  .portfolio_gallery_row {
-    margin: 10px -16px;
-  }
-  
-  /* Add padding BETWEEN each column */
-  .portfolio_gallery_row,
-  .portfolio_gallery_row > .portfolio_gallery_column {
-    padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .portfolio_gallery_column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
-  }
-  
-  /* Clear floats after rows */ 
-  .portfolio_gallery_row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .portfolio_gallery_content {
-    background-color: rgb(253, 250, 250);
-    padding: 10px;
+  .portfolio_gallery_row{
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .portfolio_gallery_content img{
-      max-width: 300px;
+  .gallery .portfolio_gallery_filter .portfolio_filter_item.active,
+  .gallery .portfolio_gallery_filter.portfolio_filter_item:hover{
+      color: var(--first-color);
+      border-color: var(--first-color);
   }
-  
-  /* The "show" class is added to the filtered elements */
-  .portfolio_gallery_show {
-    display: block;
+  /*------------------------- Variable dark theme color -----------------*/
+  body.dark-theme{
+    /* HSL color mode */
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29%, 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
   }
-  
-  /* Style the buttons */
-  .portfolio_gallery_btn {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: rgb(255, 255, 255);
+
+  /*------------------------- Button Dark/Light -------------------------*/
+  .nav_btns{
+    display: flex;
+    align-items: center;
+  }
+
+  .change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
     cursor: pointer;
   }
-  
-  .portfolio_gallery_btn:hover {
-    background-color: rgb(221, 221, 221);
-  }
-  
-  .portfolio_gallery_btn.active {
-    background-color: rgb(201, 201, 201);
-    color: rgb(255, 255, 255);
-  }
-  .portfolio_gallery_container{
-    display: flex;
-    justify-content: center;
-  }
 
-  .portfolio_gallery_column.show{
+  .change-theme:hover{
+    color: var(--first-color);
+  }
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  /*.gallery*/
+  .gallery{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+
+    padding: 100px 0;
+  }
+  .gallery .portfolio_gallery_filter{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .gallery .portfolio_gallery_filter .portfolio_filter_item{
+    color: #8d8c8c;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin:0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+  }
+ 
+  .gallery .portfolio_gallery_item{
+    width: calc(100% / 3);
+    padding: 15px;
+  }
+  .gallery .portfolio_gallery_content img{
+    width: 100%;
+  }
+  .gallery .portfolio_gallery_item.show{
     animation: fadeIn 0.5s ease;
-  }  
-
+  }
   @keyframes fadeIn{
     0%{
       opacity: 0;
@@ -93,21 +108,22 @@
       opacity: 1;
     }
   }
-  .portfolio_gallery_column.hide{
+  .gallery .portfolio_gallery_item.hide{
     display: none;
   }
   
   /*responsive*/
   @media(max-width: 991px){
-    .portfolio_gallery_column{
+    .gallery .portfolio_gallery_item{
       width: 50%;
     }
   }
   @media(max-width: 767px){
-      .portfolio_gallery_column {
+      .gallery .portfolio_gallery_item{
       width: 100%;
     }	
-    .portfolio_gallery_container .portfolio_gallery_btn{
+    .gallery .portfolio_gallery_filter .portfolio_filter_item{
       margin-bottom: 10px;
     }
   }
+  
