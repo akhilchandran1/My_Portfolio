@@ -22,6 +22,8 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     --container-color: rgb(255, 255, 255);
+    --outer-shadow:3px 3px 3px #af9bd3f3, -3px -3px 3px #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #ccb5d6, inset -3px -3px 3px #f8f8f8;
     /*----------------- Font and typography ------------------*/
     --body-font: 'Poppins', sans-serif;
 
@@ -257,6 +259,28 @@ img{
     color: var(--first-color-alt);
 }
 
+.home_img .img_box{
+max-width: 450px;
+display: block;
+margin: auto;
+border-radius: 50%;
+padding: 15px;
+}
+
+.home_img .img_box img{
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+
+.outer_shadow{
+    box-shadow: var(--outer-shadow);
+}
+
+.inner_shadow{
+    box-shadow: var(--inner-shadow);
+}
+
 .home_blob{
     width: 200px;
     fill: var(--first-color);
@@ -313,6 +337,109 @@ img{
     font-size: 1.25rem;
 }
 
+/*----------------------------- EFFECT WRAP -----------------------------*/
+.effect_wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+
+.effect_1{
+    width: 30px;
+    height: 30px;
+    border: 4px solid #3105ce;
+    right: 10%;
+    bottom: 10%;
+    animation: spin 10s linear infinite;
+}
+
+.effect_2{
+    left: 3%;
+    bottom: 20%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: top-bounce 3s ease-in-out infinite;
+}
+
+.effect_2 div{
+    height: 3px;
+    width: 3px;
+    background-color: #ff8b07;
+    margin: 0 3px 9px;
+}
+
+.effect_3{
+    height: 180px;
+    width: 180px;
+    border: 25px solid #07ff13;
+    border-radius: 50%;
+    left: 50%;
+    top: -35px;
+    animation: left-bounce 3s ease-in-out infinite;
+}
+
+.effect_4{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #f5214f;
+    left: 30%;
+    top: 20%;
+    animation: spin 15s linear infinite;
+}
+
+.effect_4:before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid #f5214f;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+
+.effect_5{
+    height: 60px;
+    width: 60px;
+    right: 10%;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 10s linear infinite;
+}
+
+.effect_5 div{
+    width: 1px;
+    background-color: #05fdfd;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes top-bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+}
+
+@keyframes left-bounce{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+}
 /*----------------------------- BUTTONS --------------------------------*/
 .button{
     display: inline-block;
@@ -622,7 +749,9 @@ img{
     border-radius: 0.5rem;
     justify-self: center;
 }
-
+.home_img .img_box {
+    max-width: 280px;
+}
 .portfolio_title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
@@ -847,6 +976,9 @@ body.dark-theme{
 
 /*--------------------- small devices max-350px width ----------------------*/
 @media screen and (max-width: 350px){
+    .section {
+        padding: 0.5rem 0 2em;
+    }
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -863,8 +995,28 @@ body.dark-theme{
         grid-template-columns: 0.25fr 3fr;
     }
 
-    .home_blob{
-        width: 180px;
+    .home_img .img_box {
+        max-width: 269px;
+    }
+    .effect_1{
+        bottom: 67%;
+    }
+    .effect_2{
+        bottom: 94%;
+        width: 42px;
+    }
+    .effect_3{
+        top: -133px;
+    }
+    .effect_4{
+        left: 10%;
+        top: 28%;
+    }
+    .effect_5{
+        height: 30px;
+        width: 30px;
+        right: 0%;
+        top: 11%;
     }
 
     .skills_title{
@@ -876,9 +1028,40 @@ body.dark-theme{
     }
 
 }
+@media screen and (min-width: 351px){
+    .section {
+        padding: 2rem 0 2em;
+    }
+    .effect_1{
+        bottom: 67%;
+    }
+    .effect_2{
+        bottom: 94%;
+        width: 42px;
+    }
+    .effect_3{
+        top: -133px;
+    }
+    .effect_4{
+        left: 10%;
+        top: 28%;
+    }
+    .effect_5{
+        height: 30px;
+        width: 30px;
+        right: 0%;
+        top: 11%;
+    }
+    .mobile_app_img{
+        max-width: 100px;
+    }
+}
 
 /*--------------------- medium devices min-568px width ----------------------*/
 @media screen and (min-width:568px) {
+    .section{
+        padding: 2rem 0 4rem;
+    }
     .home_content{
         grid-template-columns: max-content 1fr 1fr;
     }
@@ -888,6 +1071,28 @@ body.dark-theme{
     .home_img{
         order: 1;
         justify-self: center;
+    }
+    .home_img .img_box {
+        max-width: 450px;
+    }
+    .effect_1{
+        bottom: 50%;
+    }
+    .effect_2{
+        bottom: 87%;
+    }
+    .effect_3{
+        top: -133px;
+    }
+    .effect_4{
+        left: 50%;
+        top: 35%;
+    }
+    .effect_5{
+        height: 30px;
+        width: 30px;
+        right: 3%;
+        top: 11%;
     }
 
     .about_container,
@@ -975,16 +1180,31 @@ body.dark-theme{
         text-align: justify;
     }
 
-    .home_blob{
-        width: 270px;
-    }
-
     .home_scroll{
         display: block;
     }
 
     .home_scroll-button{
         margin-left: 3rem;
+    }
+    .effect_1{
+        bottom: 10%;
+    }
+    .effect_2{
+        bottom: 20%;
+    }
+    .effect_3{
+        top: -35px;
+    }
+    .effect_4{
+        left: 30%;
+        top: 20%;
+    }
+    .effect_5{
+        height: 60px;
+        width: 60px;
+        right: 2%;
+        top: 23%;
     }
 
     .about_container{
@@ -1058,15 +1278,29 @@ body.dark-theme{
         padding: 0;
     }
 
-    .home_blob{
-        width: 320px;
-    }
-
     .home_social{
         transform: translateX(-4rem);
         font-size: 23px;
     }
-
+    .effect_1{
+        bottom: 10%;
+    }
+    .effect_2{
+        bottom: 20%;
+    }
+    .effect_3{
+        top: -35px;
+    }
+    .effect_4{
+        left: 30%;
+        top: 20%;
+    }
+    .effect_5{
+        height: 60px;
+        width: 60px;
+        right: 10%;
+        top: 30%;
+    }
     .footer_social{
         font-size: 23px;
     }
